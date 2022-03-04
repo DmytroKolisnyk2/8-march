@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+
+.Modal {
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 24px);
+}
+.Modal__spinner {
+  position: relative;
+  &--first {
+    top: 8px;
+  }
+  &--second {
+    top: -7px;
+    transform: rotate(165deg);
+    left: -20px;
+  }
+}
+.Modal__content-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & h2{
+    color: $white;
+    font-size: 45px;
+    @media screen and (max-width: 420px) {
+      font-size: 25px;
+    }
+  }
+  & div{
+    margin-right: 12px;
+  }
+}
