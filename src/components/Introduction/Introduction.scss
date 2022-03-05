@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.introduction {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( rgba(85, 85, 85, 0.123) 0%, rgba(0,0,0,0.85) 100%);
+}
+.introduction__headline{
+  color: $white;
+  font-family: $font;
+  font-size: 60px;
+}
+.introduction__text {
+  color: $white;
+  font-family: $font;
+  font-size: 20px;
+}
