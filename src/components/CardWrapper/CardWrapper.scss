@@ -1,0 +1,12 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 190px;
+}
+.cards__content-wrapper {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  // margin: 0 auto;
+}

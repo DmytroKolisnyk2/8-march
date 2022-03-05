@@ -5,6 +5,7 @@ import { UseEffectScroll } from "react-use-smooth-scroll";
 import Img from "../../images/photo_2022-02-26_15-22-29.jpg";
 import { Parallax } from "react-parallax";
 import Introduction from "../Introduction/Introduction";
+import CardWrapper from "../CardWrapper/CardWrapper";
 
 import parallaxSecond from "../../images/parallax_bg.jpg";
 import parallaxFirst from "../../images/parallax_bg-first.jpg";
@@ -13,7 +14,7 @@ const Main = () => {
   return (
     <main className="main">
       <Parallax strength={500} bgImage={parallaxFirst}>
-       <Introduction/>
+        <Introduction />
       </Parallax>
       <Parallax strength={1400} bgImage={parallaxSecond}>
         <section className="girls">
@@ -51,6 +52,7 @@ const Main = () => {
           </UseEffectScroll>
         </section>
       </Parallax>
+      <CardWrapper></CardWrapper>
     </main>
   );
 };
