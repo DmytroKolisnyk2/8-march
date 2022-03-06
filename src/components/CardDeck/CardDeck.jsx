@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { useSprings, animated, to as interpolate } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
-import Img from "../../images/photo_2022-02-26_15-22-29.jpg";
-import darkFrame from "../../images/darkFrame.png";
-
+import Marina from "../../images/MarinaPolaroid.jpg";
+import Masha from "../../images/MashaPolaroid.jpg";
+import Asia from "../../images/AsiaPolaroid.jpg";
+import Liza from "../../images/LizaPolaroid.jpg";
+import Sasha from "../../images/SashaPolaroid.jpg";
 
 import styles from "./styles.module.scss";
 
-const cards = [Img, Img, Img];
+const cards = [Marina, Masha, Asia, Liza, Sasha];
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({

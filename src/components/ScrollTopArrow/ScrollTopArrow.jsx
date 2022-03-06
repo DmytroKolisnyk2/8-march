@@ -6,7 +6,7 @@ export default function ScrollTopArrow({ color, bgColor, borderRadius }) {
   return (
     <div
       onClick={() => {
-        console.log(window)
+        console.log(window);
         window.scrollTo({
           top: 0,
           behavior: "smooth",
@@ -19,7 +19,7 @@ export default function ScrollTopArrow({ color, bgColor, borderRadius }) {
       }}
     >
       <span style={{ color: color, fontSize: "42px" }} className="material-icons">
-        &24;
+        &#62;
       </span>
     </div>
   );

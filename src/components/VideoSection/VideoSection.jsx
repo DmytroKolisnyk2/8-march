@@ -2,7 +2,7 @@ import React from "react";
 import "./VideoSection.scss";
 import mp4Video from "../../images/bgVideo.mp4";
 import ScrollTopArrow from "../ScrollTopArrow/ScrollTopArrow";
-import { Fade } from "react-awesome-reveal";
+import { Fade, AttentionSeeker } from "react-awesome-reveal";
 
 export default function VideoSection() {
   return (
@@ -14,13 +14,12 @@ export default function VideoSection() {
         {/* <source src="./video/bg_video.webm" type="video/webm" /> */}
       </video>
       <div className="video__text-wrapper">
-        <Fade cascade duration={2000}>
-          <h2 className="video__headline">Lorem ipsum dolor sit amet.</h2>
-          <p className="video__text">
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto nostrum
-            porro!
-          </p>
+        <Fade damping={1.35} cascade duration={3000}>
+          {/* <AttentionSeeker duration={3000} effect="heartBeat"> */}
+          <h2 className="video__headline">Наші дорогенькі</h2>
+          {/* </AttentionSeeker> */}
+          <p className="video__text">Зі святом вас!</p>
+          <p className="video__caption">До речі, ви зараз ддосите російські сайти)</p>
         </Fade>
       </div>
       {/* <Fade><ScrollTopArrow bgColor="whitesmoke" color="black"/></Fade> */}

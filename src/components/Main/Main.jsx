@@ -12,6 +12,7 @@ import { UseEffectScroll } from "react-use-smooth-scroll";
 import parallaxWall from "../../images/parallax_bg.jpg";
 import parallaxGuns from "../../images/parallax_bg-first.jpg";
 import parallaxUkraine from "../../images/UkraineBg.jpg";
+import brickWall from "../../images/brickWall.jpg";
 
 const Main = () => {
   return (
@@ -20,7 +21,7 @@ const Main = () => {
         <Parallax strength={500} bgImage={parallaxGuns}>
           <Introduction />
         </Parallax>
-        <Parallax strength={1400} bgImage={parallaxWall}>
+        <Parallax strength={1400} bgImage={brickWall}>
           <GirlsSection></GirlsSection>
         </Parallax>
         <CardWrapper />

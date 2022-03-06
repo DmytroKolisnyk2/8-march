@@ -1,10 +1,9 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
-import { Parallax } from "react-parallax";
+import { Fade, Slide } from "react-awesome-reveal";
 // import polaroidFrame from '../../images/polaroid.png';
-import darkFrame from "../../images/darkFrame.png";
+import darkFrame from "../../images/darkFrame.PNG";
 
-const GirlsPart = ({ orientation, img, children }) => {
+const GirlsPart = ({ orientation, img, children, relation }) => {
   return (
     <div
       className={`girls__content-wrapper girls__content-wrapper--${orientation} ${
@@ -12,27 +11,21 @@ const GirlsPart = ({ orientation, img, children }) => {
       }`}
     >
       {img && (
-        <Fade
-          // fraction={0.3}
-          duration={500}
-          className="girls__photo-wrapper"
-          direction={orientation}
-        >
-          {/* <img className="girls__photo" src={img} alt="no-phot" /> */}
-          <Parallax
-            style={{ borderImage: `url("${darkFrame}") 30 fill / 30px / 30px space` }}
-            strength={1000}
-            bgImage={img}
-          >
-            <div
-              className="girls__photo"
-            ></div>
-          </Parallax>
-        </Fade>
+        <Slide duration={500} className="girls__photo-wrapper" direction={orientation}>
+          <img
+            style={{
+              borderImage: `url("${darkFrame}") 30  / 40px / 23px round`,
+              paddingTop: `${relation * 100}%`,
+            }}
+            className="girls__photo"
+            src={img}
+            alt="no-phot"
+          />
+        </Slide>
       )}
 
       <div className="girls__text-wrapper">
-        <Fade fraction={0.8} direction="down">
+        <Fade fraction={0.85} direction="down">
           <div>{children}</div>
         </Fade>
       </div>

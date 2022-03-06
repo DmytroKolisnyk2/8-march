@@ -13,7 +13,7 @@ const CardWrapper = () => {
       className="cards"
     >
       <Fade cascade>
-        <h2 className="cards__headline">Lorem ipsum dolor sit amet.</h2>
+        <h2 className="cards__headline">Ось такі у нас бойцухи</h2>
       </Fade>
       <div className="cards__content-wrapper">
         <CardDeck />
