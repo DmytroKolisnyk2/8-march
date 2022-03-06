@@ -2,6 +2,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { Parallax } from "react-parallax";
 // import polaroidFrame from '../../images/polaroid.png';
+import darkFrame from "../../images/darkFrame.png";
 
 const GirlsPart = ({ orientation, img, children }) => {
   return (
@@ -13,10 +14,19 @@ const GirlsPart = ({ orientation, img, children }) => {
       {img && (
         <Fade
           // fraction={0.3}
-          duration={500} className="girls__photo-wrapper" direction={orientation}>
+          duration={500}
+          className="girls__photo-wrapper"
+          direction={orientation}
+        >
           {/* <img className="girls__photo" src={img} alt="no-phot" /> */}
-          <Parallax strength={1000} bgImage={img}>
-            <div className="girls__photo"></div>
+          <Parallax
+            style={{ borderImage: `url("${darkFrame}") 30 fill / 30px / 30px space` }}
+            strength={1000}
+            bgImage={img}
+          >
+            <div
+              className="girls__photo"
+            ></div>
           </Parallax>
         </Fade>
       )}

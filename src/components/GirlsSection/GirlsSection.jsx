@@ -9,7 +9,7 @@ export function GirlsSection() {
       <GirlsPart orientation="left">
         <p className="girls__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
       </GirlsPart>
-      <GirlsPart img={Img} orientation="left">
+      <GirlsPart styles img={Img} orientation="left">
         <p className="girls__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
       </GirlsPart>
       <GirlsPart img={Img} orientation="right">

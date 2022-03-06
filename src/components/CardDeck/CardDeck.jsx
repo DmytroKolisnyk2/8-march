@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useSprings, animated, to as interpolate } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import Img from "../../images/photo_2022-02-26_15-22-29.jpg";
+import darkFrame from "../../images/darkFrame.png";
+
 
 import styles from "./styles.module.scss";
 
@@ -74,7 +76,7 @@ function Deck() {
 export default function CardDeck() {
   return (
     // <div className={`${styles.container}`}>
-      <Deck />
+    <Deck />
     // </div>
   );
 }
