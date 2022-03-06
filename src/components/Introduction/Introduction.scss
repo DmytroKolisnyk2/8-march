@@ -6,14 +6,22 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient( rgba(85, 85, 85, 0.123) 0%, rgba(0,0,0,0.85) 100%);
+  padding: 20px;
+  text-align: center;
 }
 .introduction__headline{
   color: $white;
   font-family: $font;
   font-size: 60px;
+   @media screen and (max-width: 600px) {
+    font-size: 30px;
+  }
 }
 .introduction__text {
   color: $white;
   font-family: $font;
-  font-size: 20px;
+  font-size: 24px;
+   @media screen and (max-width: 600px) {
+    font-size: 20px;
+  }
 }

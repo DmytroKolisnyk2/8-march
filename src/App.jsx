@@ -1,7 +1,8 @@
 import React, { Component, Suspense, lazy } from "react";
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 import "./styles/App.scss";
 import Modal from "./components/Modal/Modal";
+
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 
 class App extends Component {
@@ -9,9 +10,7 @@ class App extends Component {
     return (
       <>
         <Suspense fallback={<Modal />}>
-          <Routes>
-            <Route path="*" element={<HomePage />} />
-          </Routes>
+            <HomePage />
         </Suspense>
       </>
     );

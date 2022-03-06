@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.video__bg-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  top: 0;
+  z-index: -1;
+}
+.video {
+  text-align: center;
+  position: relative;
+}
+.video__gradient {
+  z-index: 2;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.2) 20%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video__headline {
+  color: $white;
+  font-family: $font;
+  font-size: 60px;
+  margin-bottom: 10px;
+  @media screen and (max-width: 600px) {
+    font-size: 30px;
+  }
+}
+.video__text {
+  color: $white;
+  font-family: $font;
+  font-size: 24px;
+  @media screen and (max-width: 600px) {
+    font-size: 20px;
+  }
+}
+.video__text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

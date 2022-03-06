@@ -1,0 +1,44 @@
+.deck {
+  position: absolute;
+  /* top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  width: fit-content;
+  height: fit-content; */
+  /* will-change: transform; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.deck > div {
+  cursor: grab;
+  touch-action: none;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 80vw;
+  min-width: 320px;
+  max-width: 500px;
+  // height: 750px;
+  /* max-height: 770px; */
+  /* will-change: transform; */
+  height: auto;
+  border-radius: 10px;
+  padding-top: 150%;
+  /* box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3); */
+  // @media screen and (max-width: 610px) {
+  //   height: 700px;
+  // }
+  // @media screen and (max-width: 578px) {
+  //   height: 600px;
+  // }
+  // @media screen and (max-width: 468px) {
+  //   height: 500px;
+  // }
+  &:active{
+    cursor: no-drop;
+  }
+}
