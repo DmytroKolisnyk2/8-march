@@ -1,5 +1,5 @@
 .arrow {
-  font-family: sans-serif;
+  font-family: "Istok Web", sans-serif;
   font-size: 20px;
   font-weight: 600;
   position: absolute;
@@ -13,9 +13,15 @@
   transform: rotate(-90deg);
   box-shadow: 0 1px 1px rgba(102, 62, 62, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    z-index: 5;
+  z-index: 5;
+  padding: 4px;
 }
 .arrow:hover {
   opacity: 1;
   transform: scale(1.05) rotate(-90deg);
+}
+.headline {
+  color: white;
+  font-family: "Istok Web", sans-serif;
+  margin-top: 10px;
 }

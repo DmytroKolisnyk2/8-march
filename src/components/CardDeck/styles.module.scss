@@ -19,26 +19,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 80vw;
-  min-width: 320px;
+  width: 65vw;
   max-width: 500px;
+  padding-top: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  box-shadow: 0 12.5px 10px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
   // height: 750px;
   /* max-height: 770px; */
   /* will-change: transform; */
   height: auto;
   border-radius: 10px;
-  padding-top: 120%;
-  border: 1px solid rgba(0, 0, 0, 0.26);
-  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
-  // @media screen and (max-width: 610px) {
-  //   height: 700px;
-  // }
-  // @media screen and (max-width: 578px) {
-  //   height: 600px;
-  // }
-  // @media screen and (max-width: 468px) {
-  //   height: 500px;
-  // }
+  padding-top: 121%;
+
   &:active {
     cursor: no-drop;
   }

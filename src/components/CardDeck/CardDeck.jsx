@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { useSprings, animated, to as interpolate } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
-import Marina from "../../images/MarinaPolaroid.jpg";
-import Masha from "../../images/MashaPolaroid.jpg";
-import Asia from "../../images/AsiaPolaroid.jpg";
-import Liza from "../../images/LizaPolaroid.jpg";
-import Sasha from "../../images/SashaPolaroid.jpg";
+import img1 from "../../images/polaroid/1.jpg";
+import img2 from "../../images/polaroid/2.jpg";
+import img3 from "../../images/polaroid/3.jpg";
+import img4 from "../../images/polaroid/4.jpg";
+import img5 from "../../images/polaroid/5.jpg";
+import img6 from "../../images/polaroid/6.jpg";
+import img7 from "../../images/polaroid/7.jpg";
+import img8 from "../../images/polaroid/8.jpg";
 
 import styles from "./styles.module.scss";
 
-const cards = [Marina, Masha, Asia, Liza, Sasha];
+const cards = [img1, img8, img2, img3, img4, img5, img6, img7];
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({
@@ -22,7 +25,7 @@ const to = (i) => ({
 const from = (_i) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
 const trans = (r, s) =>
-  `perspective(3000px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`;
+  `perspective(10000px) rotateX(10deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`;
 
 function Deck() {
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
