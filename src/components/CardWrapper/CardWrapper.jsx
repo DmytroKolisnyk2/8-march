@@ -3,6 +3,7 @@ import CardDeck from "../CardDeck/CardDeck";
 import "./CardWrapper.scss";
 import bgCards from "../../images/coffeeTable.jpg";
 import { Fade } from "react-awesome-reveal";
+import flowers from '../../images/shampano.png'
 
 const CardWrapper = () => {
   return (
@@ -17,6 +18,7 @@ const CardWrapper = () => {
       </Fade>
       <div className="cards__content-wrapper">
         <CardDeck />
+        <img src={flowers} alt="flowers" className="cards__flowers" />
       </div>
     </section>
   );

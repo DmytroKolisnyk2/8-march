@@ -11,6 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 40px 30px 120px;
+  overflow-x: hidden;
 }
 .cards__content-wrapper {
   position: relative;
@@ -21,15 +22,29 @@
   margin: 0 auto;
 }
 .cards__headline {
+  max-width: 1200px;
   color: $white;
   font-family: $font;
   font-size: 60px;
   text-align: center;
-  margin-bottom: 100px;
+  margin: 0 auto 110px;
   @media screen and (max-width: 800px) {
     font-size: 45px;
   }
   @media screen and (max-width: 600px) {
     font-size: 30px;
+  }
+}
+.cards__flowers {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  height: 60%;
+  width: 80%;
+  z-index: 0;
+  @media screen and (max-width: 600px) {
+    top: 24%;
   }
 }

@@ -7,9 +7,11 @@ export default function Introduction() {
     <section className="introduction">
       <div className="introduction__wrapper-content">
         <Fade cascade duration={3500}>
-          <h2 className="introduction__headline">У такі часи святковий настрій</h2>
+          <h2 className="introduction__headline">
+            Складно зберегти святковий настрій у такі часи
+          </h2>
           <p className="introduction__text">
-            Але є особи в цьому житті які дають наснагу рухатися далі...
+            Але в цьому житті є люди, які дають наснагу рухатися далі...
           </p>
         </Fade>
       </div>

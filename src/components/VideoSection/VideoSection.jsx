@@ -2,7 +2,7 @@ import React from "react";
 import "./VideoSection.scss";
 import mp4Video from "../../images/bgVideo.mp4";
 import ScrollTopArrow from "../ScrollTopArrow/ScrollTopArrow";
-import { Fade, AttentionSeeker } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function VideoSection() {
   return (

@@ -25,10 +25,10 @@ export function GirlsSection() {
         <p className="girls__text">юну мотоциклєтчицю</p>
       </GirlsPart>
       <GirlsPart img={Marina} orientation="right">
-        <p className="girls__text">повелительницю мідії</p>
+        <p className="girls__text">повелительницю мідій</p>
       </GirlsPart>
       <GirlsPart img={Sasha} orientation="left">
-        <p className="girls__text">перспективну скалазку</p>
+        <p className="girls__text">перспективну скелелазку</p>
       </GirlsPart>
       <GirlsPart asia img={Asia} orientation="right">
         <p className="girls__text">невтомну домогосподарочку</p>
