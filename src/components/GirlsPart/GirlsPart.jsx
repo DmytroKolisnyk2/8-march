@@ -19,7 +19,11 @@ const GirlsPart = ({
       }`}
     >
       {img && (
-        <Slide duration={500} className="girls__photo-wrapper" direction={orientation}>
+        <Slide
+          duration={500}
+          className="girls__photo-wrapper"
+          direction={orientation}
+        >
           <img
             onClick={() => setIsOpen(true)}
             style={{
@@ -34,11 +38,9 @@ const GirlsPart = ({
       )}
 
       <div className="girls__text-wrapper">
-        <Fade fraction={0.85} direction="down">
+        <Fade fraction={0.9} direction="down">
           <div>
-            {asia && isOpen && (
-              <h2 className="girls__headline">Блін, посуда ше грязна)</h2>
-            )}
+            {asia && isOpen && <h2 className="girls__headline">Блін, посуда ше грязна)</h2>}
             {slavic && isOpen && (
               <h2 className="girls__headline">Славік ну ми то знаєм шо ти найгарніший</h2>
             )}

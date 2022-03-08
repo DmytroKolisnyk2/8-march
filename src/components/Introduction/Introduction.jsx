@@ -6,7 +6,7 @@ export default function Introduction() {
   return (
     <section className="introduction">
       <div className="introduction__wrapper-content">
-        <Fade cascade duration={3500}>
+        <Fade cascade duration={5400}>
           <h2 className="introduction__headline">
             Складно зберегти святковий настрій у такі часи
           </h2>

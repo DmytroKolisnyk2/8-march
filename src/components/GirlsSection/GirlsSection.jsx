@@ -19,7 +19,7 @@ export function GirlsSection() {
   return (
     <section className="girls">
       <GirlsPart orientation="left">
-        <p className="girls__text">Хай там як просто неможливо забути про</p>
+        <p className="girls__text">Хай там як, але просто неможливо забути про</p>
       </GirlsPart>
       <GirlsPart styles img={Lizka} orientation="left">
         <p className="girls__text">юну мотоциклєтчицю</p>
