@@ -12,7 +12,10 @@ export default function VideoSection() {
     <section className="video">
       <div className="video__gradient"></div>
       <video poster={poster} preload autoPlay loop muted className="video__bg-video">
-        <source src={mp4Video} type="video/mp4" />
+        <source
+          src="https://raw.githubusercontent.com/DmytroKolisnyk2/8-march/master/src/images/bgVideo.mp4"
+          type="video/mp4"
+        />
         {/* <source src={ogvVideo} type="video/ogg" />
         <source src={webmVideo} type="video/webm" /> */}
       </video>
