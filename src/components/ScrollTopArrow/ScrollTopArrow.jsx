@@ -8,22 +8,23 @@ export default function ScrollTopArrow({ color, bgColor, borderRadius }) {
 
   return (
     <>
-        <div
-          onClick={() => {
-            scroll.scrollToTop();
-            setIsOpen(true);
-          }}
-          className={styles.arrow}
-          style={{
-            backgroundColor: bgColor,
-            borderRadius: borderRadius,
-          }}
-        >
-          <span style={{ color: color, fontSize: "42px" }} className="material-icons">
-            &#62;
-          </span>
-          {isOpen && <h2 className={styles.headline}>Хехе найобка</h2>}
-        </div>
+      <div
+        onClick={() => {
+          scroll.scrollToTop();
+          setIsOpen(true);
+          document.querySelector(".video__bg-video").play();
+        }}
+        className={styles.arrow}
+        style={{
+          backgroundColor: bgColor,
+          borderRadius: borderRadius,
+        }}
+      >
+        <span style={{ color: color, fontSize: "42px" }} className="material-icons">
+          &#62;
+        </span>
+        {isOpen && <h2 className={styles.headline}>Хехе найобка</h2>}
+      </div>
     </>
   );
 }

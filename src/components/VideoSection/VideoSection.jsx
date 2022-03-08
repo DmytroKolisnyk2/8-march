@@ -13,8 +13,8 @@ export default function VideoSection() {
       <div className="video__gradient"></div>
       <video poster={poster} preload autoPlay loop muted className="video__bg-video">
         <source src={mp4Video} type="video/mp4" />
-        <source src={ogvVideo} type="video/ogg" />
-        <source src={webmVideo} type="video/webm" />
+        {/* <source src={ogvVideo} type="video/ogg" />
+        <source src={webmVideo} type="video/webm" /> */}
       </video>
       <div className="video__text-wrapper">
         <Fade damping={1.35} cascade duration={3000}>
