@@ -27,7 +27,7 @@ const GirlsPart = ({
           <img
             onClick={() => setIsOpen(true)}
             style={{
-              borderImage: `url("${darkFrame}") 30  / 40px / 23px round`,
+              borderImage: `url("${darkFrame}") 30  / 50px / 23px round`,
               // paddingTop: `${relation * 100}%`,
             }}
             className="girls__photo"

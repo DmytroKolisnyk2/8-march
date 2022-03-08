@@ -1,6 +1,8 @@
 import React from "react";
 import "./VideoSection.scss";
 import mp4Video from "../../images/bgVideo.mp4";
+import webmVideo from "../../images/bgVideo.webm";
+import ogvVideo from "../../images/bgVideo.ogx";
 import ScrollTopArrow from "../ScrollTopArrow/ScrollTopArrow";
 import { Fade } from "react-awesome-reveal";
 
@@ -8,10 +10,10 @@ export default function VideoSection() {
   return (
     <section className="video">
       <div className="video__gradient"></div>
-      <video autoPlay loop muted className="video__bg-video">
+      <video preload autoPlay loop muted className="video__bg-video">
         <source src={mp4Video} type="video/mp4" />
-        {/* <source src="./video/bg_video.ogx" type="video/ogv" /> */}
-        {/* <source src="./video/bg_video.webm" type="video/webm" /> */}
+        <source src={ogvVideo} type="video/ogg" />
+        <source src={webmVideo} type="video/webm" />
       </video>
       <div className="video__text-wrapper">
         <Fade damping={1.35} cascade duration={3000}>
