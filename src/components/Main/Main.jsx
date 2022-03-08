@@ -9,7 +9,7 @@ import CardWrapper from "../CardWrapper/CardWrapper";
 import { Parallax } from "react-parallax";
 import { UseEffectScroll } from "react-use-smooth-scroll";
 
-import parallaxGuns from "../../images/parallax_bg-first.jpg";
+import parallaxGuns from "../../images/parallax.jpg";
 import parallaxUkraine from "../../images/UkraineBg.jpg";
 import brickWall from "../../images/brickWall.jpg";
 
